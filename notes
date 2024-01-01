@@ -1,0 +1,73 @@
+ERD rough draft notes
+
+Entities:
+
+- Salesperson
+-------------------
+salespersonID
+first_name
+last_name
+Phone number
+
+- Customer ( buyer or getting car fixed)
+-----------------------
+first_name 
+last_name
+phone number
+email
+
+Invoice
+---------------
+InvoiceID
+date
+description of service
+amount
+customerID
+serialNumber
+
+- Car
+---------------------
+serialNumber
+make
+model
+year
+price
+condition: used or new
+serviceCar: 
+
+service_ticket
+------------------
+ticketID
+date
+description
+fk = car serial number
+
+
+- Mechanic
+---------------
+mechanicID
+first_name
+last_name
+
+
+
+- Car Parts Inventory
+----------------------
+- PartID
+-Item_Name
+-description?
+- Price
+- 
+
+
+Function: 
+When a customer takes one or more cars in for repair or service, one service ticket is written for each car.
+
+when a customer buys a car, they get an invoice?
+
+when a customer gets repairs/services , one ticket service is written
+
+Null and NOT NULL
+if you dont declare not null, nullable values are possible
+
+** need to drop mechanic id from serviceticket table***
